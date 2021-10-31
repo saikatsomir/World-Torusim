@@ -1,0 +1,8 @@
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+a:hover{
+    color: white;
+}

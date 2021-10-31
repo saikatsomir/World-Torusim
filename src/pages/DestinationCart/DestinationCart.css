@@ -1,0 +1,91 @@
+.curd{
+    margin-top: 100px;
+    position: relative;
+
+}
+.cards{
+    background-image: linear-gradient(to right, rgba(255,0,0,0.1), rgba(155,0,0,0.6));
+    padding:20px;
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+    display: flex;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(90, 90, 201), 0 0 5px rgb(68, 68, 184);
+    border-radius: 20px;
+}
+.cards img{
+    border-radius: 15px;
+    
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+Button{
+    background: linear-gradient(to top left, #6699ff 0%, #ff99cc 100%);
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    outline: none;
+}
+
+
+
+/* Go to Trash */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li{
+
+      list-style-type:none;
+  }
+  ul li {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+  }
+  .close{
+      position: absolute;
+      top:-15%;
+      right: 17%;
+      border: none;
+      border-radius: 50%;
+      
+      padding: 7px 12px;
+      
+  }
+  
+  ul li:hover {
+    background-color: #eee;
+  }
+ 
+  
+  .close:hover {background: #bbb;}  
+
+
+  @media only screen and (max-width:576px) {
+      .cards{
+          margin-top: 200px;
+          height: 480px;
+          display: block;
+          /* margin-left: 20px;
+          margin-right: 20px; */
+      }
+      .cards img{
+          width: 300px;
+          margin-left: 20px;
+      }
+     .close{
+         top: 77%;
+         right: 25%;
+         border-radius: 20px;
+         width: 200px;
+     }
+  }
+

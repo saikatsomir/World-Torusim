@@ -1,0 +1,56 @@
+.body{
+    margin-top: 100px;
+}
+  .body-handler{
+    position: relative;
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  color: white;
+  border: 1px solid black;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
+  
+}
+.div{
+  border-radius: 10px;
+  background-image: url('https://image.freepik.com/free-vector/black-background-with-focus-spot-light_1017-27230.jpg');
+  padding: 50px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+ 
+}
+.h1{
+  
+  border-bottom: 1px solid white;
+  margin: 0px 50px;
+  
+}
+span{
+  
+  color: pink;
+}
+
+.button{
+ top: -22%;
+  position: absolute;
+  right: 3%;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .body-handler{
+      display: block;
+  }
+  .div{
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .button{
+      top: -7%;
+  }
+
+}
