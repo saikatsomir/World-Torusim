@@ -54,13 +54,14 @@ const Manage = () => {
           </div>
           <div className="div">
           <h1 className="text-cneter text-white h1 mb-3">Time Shedule</h1>
-             <h6><span>Your Location: </span> {dt.time}</h6>
-             <h6><span>Travle Location: </span> {dt.timeUp}</h6>
+             <h6><span>How much time you want trip: </span> {dt.time} days</h6>
+             <h6><span>Thank You</span></h6>
+             
           </div>
           <div className="div">
           <h1 className="text-cneter text-white h1 mb-3">Location</h1>
-             <h6><span>Your Location: </span> {dt.min}</h6>
-             <h6><span>Travle Location: </span> {dt.max}</h6> 
+             <h6><span>Minimum: </span> {dt.min} dollar</h6>
+             <h6><span>Maximum: </span> {dt.max} dollar</h6> 
           </div>
        <Button onClick={()=> handleDlete(dt._id)} className="button text-dark bg-white border-0">Delete</Button>
        </div>

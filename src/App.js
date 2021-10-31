@@ -3,6 +3,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import DestinationCart from './pages/DestinationCart/DestinationCart';
 import DestinationDetails from './pages/DestinationDetails/DestinationDetails';
+import About from './pages/Home/About/About';
 import Fotter from './pages/Home/Fotter/Fotter';
 import Nevbars from './pages/Home/Header/Navbar/Navbar';
 import Home from './pages/Home/Home/Home';
@@ -36,15 +37,18 @@ function App() {
             <Route path="/manage">
               <Manage></Manage>
             </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
             <PrivetRoute path="/detail/:id">
               <DestinationDetails></DestinationDetails>
             </PrivetRoute>
-            <Route path="/details/:id">
+            <PrivetRoute path="/details/:id">
               <DestinationCart></DestinationCart>
-            </Route>
-            <Route path="/deta/:id">
+            </PrivetRoute>
+            <PrivetRoute path="/deta/:id">
               <SheduleTime></SheduleTime>
-            </Route>
+            </PrivetRoute>
             <Route paht="/login">
               <Login></Login>
             </Route>

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+
 import './Shedule.css'
 
 
@@ -18,6 +18,7 @@ useEffect(()=>{
         register,
         handleSubmit,
         watch,
+        reset,
         formState: { errors }
       } = useForm();
     
@@ -26,12 +27,14 @@ useEffect(()=>{
         .then(res =>{
           if(res.data.insertedId){
             alert('Are you really want to add this')
+            reset()
           }
           alert(JSON.stringify(data));
         })
       };
     return (
         <div className="from">
+          <h1 className="text-white">Give Us Your Time Shedule</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
           <label>Where you are from</label>
 
